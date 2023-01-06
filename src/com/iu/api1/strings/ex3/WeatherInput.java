@@ -1,9 +1,12 @@
 package com.iu.api1.strings.ex3;
 
+import java.util.Scanner;
+
 public class WeatherInput {
+	private Scanner sc;
 	
 	//search 
-	//배열을받고, 키보드로부터 검색할 도시명을 입력 받음
+	//배열을받고, 키보드로부터 검색할 도시명(대소문자무관)을 입력 받음
 	//찾은 DTO 리턴, 없으면 null
 	
 
