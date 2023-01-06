@@ -54,11 +54,18 @@ public class WetherController {
 				weatherView.view(weatherDTOs);
 				break;
 			case 3:
+				WeatherDTO weatherDTO = weatherInput.search(weatherDTOs);
+				if(weatherDTO != null) {
+					weatherView.view(weatherDTO);
+				}else {
+					System.out.println("도시정보가 없습니다");
+				}
 				break;
 			case 4:
 				this.weatherDTOs  = weatherInput.add(this.weatherDTOs);
 				break;
 			case 5:
+				this.weatherDTOs = weatherInput.remove(weatherDTOs);
 				break;
 			default:
 				check=!check;
