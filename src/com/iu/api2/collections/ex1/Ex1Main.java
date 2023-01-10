@@ -1,5 +1,7 @@
 package com.iu.api2.collections.ex1;
 
+import java.util.ArrayList;
+
 public class Ex1Main {
 
 	public static void main(String[] args) {
@@ -11,9 +13,19 @@ public class Ex1Main {
 		//4. 학생정보추가
 		//5. 학생정보삭제(이름)
 		//6. 프로그램종료
-		StudentDAO dao = new StudentDAO();
-		dao.init();
+
+		new StudentController().start();
 		
+		
+		
+		//향상된 for
+//		for(StudentDTO studentDTO:ar) {
+//			
+//		}
+//		int [] nums = new int [3];
+//		for(int n:nums) {
+//			
+//		}
 
 	}
 
